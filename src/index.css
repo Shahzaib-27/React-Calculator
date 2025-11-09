@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url("./assets/Barcelona Laptop Wallpaper.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.con {
+  width: 380px;
+
+  margin: 80px;
+  padding: 25px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 90px rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(15px);
+
+  position: relative;
+  left:30%;
+}
+
+.con input {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 15px;
+  
+  background-color: rgba(20, 20, 20, 0.8);
+  color: #ffea00;
+
+  font-size: 20px;
+
+  padding: 10px;
+  margin-bottom: 15px;
+  
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+}
+
+input::placeholder{
+    border: none;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.keys button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+
+  border-radius: 12px;
+  
+  padding: 15px;
+  font-size: 20px;
+  
+  color: #ffea00;
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+  
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.keys button:hover {
+  background-color: #ffea00;
+  color: #000;
+
+  box-shadow: 0 0 20px #ffea00;
+  transform: scale(1.05);
+}
+
+#equal {
+  grid-column: span 4;
+  
+  background: linear-gradient(90deg, #ffea00, #ffaa00);
+  color: #000;
+
+  font-weight: bold;
+
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 200, 0, 0.8);
+}
+
+#equal:hover {
+  background: linear-gradient(90deg, #ffaa00, #ffea00);
+  box-shadow: 0 0 30px #ffea00;
+}
+
+@media (max-width:490px){
+
+    .con{
+
+        position: relative;
+        left: 79px;
+
+        transform: translateX(-90%);
+
+        display: grid;
+        align-items: center;
+        text-align: center;
+
+        
+    }
+}
+
+@media (max-width:720px){
+    .con{
+
+        position: relative;
+
+        transform: translateX(-40%);
+
+        display: grid;
+        align-items: center;
+        text-align: center;
+
+        transform: all 0.1 ease;
+    }
+}
